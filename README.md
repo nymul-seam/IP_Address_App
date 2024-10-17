@@ -1,6 +1,6 @@
 def get_ip_info(api_key, ip_address='check'):
     try:
-        url = f"http://api.ipstack.com/{ip_address}?access_key=55fd0be677dcaf7e08c9b772b07a5877"
+        url = f"http://api.ipstack.com/{ip_address}?access_key={api_key}"
         response = requests.get(url)
         if response.status_code == 200:
             data = response.json()
