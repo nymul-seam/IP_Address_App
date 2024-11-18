@@ -75,7 +75,7 @@ def fetch_ip_info():
     api_key = '55fd0be677dcaf7e08c9b772b07a5877'
     # Validate the IP address
     if not is_valid_ip(ip_address):
-        messagebox.showerror("Invalid IP Address", "Please enter a valid IP address.")
+        messagebox.showerror("Invalid IP Address", "Please enter a valid IP address. (e.g., 172.10.19.34)")
         return
     get_ip_info(api_key, ip_address)
 
